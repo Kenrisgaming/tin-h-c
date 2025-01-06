@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo với hiệu ứng chuyển động</title>
+    <link rel="bản sửa.html" href="hhh.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="https://nhainonline.vn/wp-content/uploads/2023/05/su-dung-mau-sac-thiet-ke-logo-du-lich-dep.jpg" width="300" height="300">
+
+    </div>
+
+</body>
+</html>
+        </body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-image: <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKLTbd8wU1JyVugnrgHdMt8RPbsVR0K8JtCg&s" alt="Du lịch Việt Nam">;
+            background-size: cover;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .search-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .search-container input {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .search-container button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #6c7ee1;
+        }
+        nav {
+            background-color: #6c7ee1;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .destination div {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        .destination img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Form đăng nhập và đăng ký */
+        .login-container, .register-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: white;
+            border-radius: 8px;
+        }
+        .login-container input, .register-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-container button, .register-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-container button:hover, .register-container button:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+        .tabs {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .tabs button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        .tabs button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chào Mừng Đến Với Du Lịch Việt Nam</h1>
+    <p>Khám phá những địa điểm tuyệt vời và văn hóa phong phú của đất nước Việt Nam</p>
+</header>
+
+<!-- Thanh tìm kiếm -->
+<div class="search-container">
+    <input type="text" id="search-input" placeholder="Tìm kiếm điểm du lịch...">
+    <button onclick="searchContent()">Tìm Kiếm</button>
+</div>
+
+<nav id="nav-bar" class="hidden">
+    <a href="#home">Trang Chủ</a>
+    <a href="#destinations">Điểm Du Lịch</a>
+    <a href="#about">Về Chúng Tôi</a>
+    <a href="#contact">Liên Hệ</a>
+</nav>
+<body>
+</body>
+<head>
+<div class="container hidden" id="content">
+    <section id="home">
+        <h2>Chào Mừng Đến Với Việt Nam!</h2>
+        <p>Việt Nam nổi bật với những bãi biển tuyệt đẹp, các thành phố sôi động và các di tích lịch sử văn hóa phong phú. Hãy cùng chúng tôi khám phá những điểm du lịch hấp dẫn nhất!</p>
+    </section>
+    
+
+    <section id="destinations">
+        <h2>Điểm Du Lịch Nổi Bật</h2>
+        <div class="destination">
+          
+            <div>
+                <img class="logo" src="https://th.bing.com/th?id=OIP.JGdv3gnbfokHGKFpkkX3lQHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="Vịnh Hạ Long">
+                <h3>Vịnh Hạ Long</h3>
+                <p>Vịnh Hạ Long là một trong những kỳ quan thiên nhiên thế giới, nổi bật với hàng ngàn đảo đá vôi kỳ vĩ.</p>
+            </div>
+            <a href="https://www.dulichhalong.net/vinh-ha-long/" class="Vịnh hạ long">
+                <div class="earth">
+                    <img src="https://example.com/globe.png" alt="" />
+                </div>
+                <div class="Vịnh hạ long"></div>
+            </a>
+            <div>
+               
+                <h3>Huế</h3>
+                <p>Huế là cố đô của Việt Nam, với các di tích lịch sử và những lăng tẩm vua chúa đầy quyến rũ.</p>
+                <img class="logo" src="https://viettourist.com/resources/images/Blog-TayBac/b%C3%ACa(1).jpg" alt="">
+            </div>
+              
+            <a href="https://vi.wikipedia.org/wiki/Hu%E1%BA%BF" class="Huế">
+                <div class="earth">
+                 
+                <div class="huế"></div>
+            </a>
+            <p></p><div style="text-align: center; margin-top: 20px;">
+                <h3>Video nói về du lịch Việt Nam</h3>
+                <video controls width="300">
+                    <source src="video.mp4" type="video/mp4">
+                    <source src="video.ogg" type="video/ogg">
+                    Trình duyệt của bạn không hỗ trợ video.
+                </video>
+                <h3>Video nói về ẩm thực Việt Nam</h3>
+                <video controls width="300">
+                    <source src="video2.mp4" type="video/mp4">
+                    <source src="video2.ogg" type="video/ogg">
+                    Trình duyệt của bạn không hỗ trợ video.
+                </video>
+            </div>
+            </section>
+            </div>
+            </p>
+
+<!-- Form đăng nhập và đăng ký -->
+<div id="login-register" class="login-container">
+    <div class="tabs">
+        <button onclick="showLogin()">Đăng Nhập</button>
+        <button onclick="showRegister()">Đăng Ký</button>
+    </div>
+    
+    <div id="login-form">
+        <h2>Đăng Nhập</h2>
+        <form onsubmit="return checkLogin(event)">
+            <input type="text" id="username" placeholder="Tên đăng nhập" required>
+            <input type="password" id="password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng Nhập</button>
+        </form>
+    </div>
+    
+    <div id="register-form" class="hidden">
+        <h2>Đăng Ký</h2>
+        <form onsubmit="return registerUser(event)">
+            <input type="text" id="new-username" placeholder="Tên đăng nhập" required>
+            <input type="password" id="new-password" placeholder="Mật khẩu" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Đăng Ký</button>
+        </form>
+    </div>
+</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Trang Trí</title>
+    <link rel="stylesheet" href="trang1.css">
+</head>
+<body>
+    <div class="container">
+    
+
+            <a href="secondpage.html" class="btn">Đi đến Trang Thứ 2</a>
+        </section>
+
+       
+    </div>
+</body>
+</html>
+<footer>
+    <p>&copy; 2025 Du Lịch Việt Nam. Mọi quyền được bảo lưu.</p>
+</footer>
+
+<script>
+    // Mã giả lập đăng nhập
+    function checkLogin(event) {
+        event.preventDefault();
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Kiểm tra tên đăng nhập và mật khẩu (chỉ là giả lập)
+        if (username === "admin" && password === "password123") {
+            document.getElementById("login-register").classList.add("hidden");
+            document.getElementById("nav-bar").classList.remove("hidden");
+            document.getElementById("content").classList.remove("hidden");
+        } else {
+            alert("Tên đăng nhập hoặc mật khẩu không đúng!");
+        }
+    }
+
+    // Mã giả lập đăng ký
+    function registerUser(event) {
+        event.preventDefault();
+        
+        const newUsername = document.getElementById("new-username").value;
+        const newPassword = document.getElementById("new-password").value;
+        const email = document.getElementById("email").value;
+
+        // Đây chỉ là giả lập, trong thực tế cần phải lưu trữ thông tin vào cơ sở dữ liệu
+        alert(`Đăng ký thành công! Tên đăng nhập: ${newUsername}`);
+        showLogin(); // Hiển thị lại form đăng nhập sau khi đăng ký thành công
+    }
+
+    // Hiển thị form đăng nhập
+    function showLogin() {
+        document.getElementById("login-form").classList.remove("hidden");
+        document.getElementById("register-form").classList.add("hidden");
+    }
+
+    // Hiển thị form đăng ký
+    function showRegister() {
+        document.getElementById("register-form").classList.remove("hidden");
+        document.getElementById("login-form").classList.add("hidden");
+    }
+</script>
+
+</body>
+</html>
